@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite1]" parallel="tests">
+  <parameter name="browsername" value="IE"/>
+  <test name="TestOnIE(failed)" parallel="tests">
+    <parameter name="browsername" value="IE"/>
+    <classes>
+      <class name="crossBrowser.TestNGMultiBrowser">
+        <methods>
+          <include name="setup"/>
+          <include name="setup"/>
+          <include name="setup"/>
+          <include name="verifyurl"/>
+          <include name="teardown"/>
+          <include name="teardown"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- crossBrowser.TestNGMultiBrowser -->
+    </classes>
+  </test> <!-- TestOnIE(failed) -->
+  <test name="TestOnChrome(failed)" parallel="tests">
+    <parameter name="browsername" value="chrome"/>
+    <classes>
+      <class name="crossBrowser.TestNGMultiBrowser">
+        <methods>
+          <include name="setup"/>
+          <include name="setup"/>
+          <include name="setup"/>
+          <include name="verifyurl"/>
+          <include name="teardown"/>
+          <include name="teardown"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- crossBrowser.TestNGMultiBrowser -->
+    </classes>
+  </test> <!-- TestOnChrome(failed) -->
+  <test name="TestOnFirefox(failed)" parallel="tests">
+    <parameter name="browsername" value="firefox"/>
+    <classes>
+      <class name="crossBrowser.TestNGMultiBrowser">
+        <methods>
+          <include name="setup"/>
+          <include name="setup"/>
+          <include name="setup"/>
+          <include name="verifyurl"/>
+          <include name="teardown"/>
+          <include name="teardown"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- crossBrowser.TestNGMultiBrowser -->
+    </classes>
+  </test> <!-- TestOnFirefox(failed) -->
+</suite> <!-- Failed suite [Suite1] -->
